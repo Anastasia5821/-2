@@ -31,7 +31,24 @@ int main() {
 	cout << endl;
 
 	cout << endl<<"Задание 2 - Сортировка массива :" << endl;
-    int n;
+	int S;
+	//S-вид сортировки 
+	cout << "Выберите способ сортировки:" << endl << "1.Пузырьковая сортировка" << endl << "2.Сортировка вставками" << endl;
+	cin >> S;
+	switch (S) {
+	case(1):
+		start = system_clock::now();
+		for (int i = 0; i < 100; i++) {
+			for (int j = 1; j < 100 - 1; j++) {
+				if (mas[j - 1] > mas[j]) {
+					swap(mas[j - 1], mas[j]);
+				}
+			}
+		}
+		end = system_clock::now();
+		break;
+	case(2):
+        int n;
 	start = system_clock::now();
 	for (int i = 1; i < 100; i++)
 	{
@@ -47,6 +64,8 @@ int main() {
 		}
 	}
 	end = system_clock::now();
+			break;
+	}
 	sec = end - start;
 	cout <<endl<<"Время, требуемое на сортировку: "<<sec.count()<< endl;
 
