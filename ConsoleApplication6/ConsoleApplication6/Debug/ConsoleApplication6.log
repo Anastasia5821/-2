@@ -1,0 +1,4 @@
+﻿  ConsoleApplication6.cpp
+c:\users\анастасия\source\repos\consoleapplication6\consoleapplication6\consoleapplication6.cpp(19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\анастасия\source\repos\consoleapplication6\consoleapplication6\consoleapplication6.cpp(174): warning C4101: masss: неиспользованная локальная переменная
+  ConsoleApplication6.vcxproj -> C:\Users\Анастасия\source\repos\ConsoleApplication6\Debug\ConsoleApplication6.exe
